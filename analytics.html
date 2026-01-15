@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Analytics | The Magazine Africa</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .dashboard-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .chart-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    canvas {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard-title">📊 Dashboard Analytics</div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Uploads</h3>
+        <p>342</p>
+      </div>
+      <div class="card">
+        <h3>Magazines</h3>
+        <p>180</p>
+      </div>
+      <div class="card">
+        <h3>eBooks</h3>
+        <p>162</p>
+      </div>
+      <div class="card">
+        <h3>Monthly Views</h3>
+        <p>14.2K</p>
+      </div>
+    </div>
+
+    <div class="chart-section">
+      <h3>Monthly Upload Trend</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-section">
+      <h3>Content Type Distribution</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // Bar Chart
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    new Chart(barCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [{
+          label: 'Uploads',
+          data: [30, 45, 50, 70, 90, 110, 130],
+          backgroundColor: '#3498db'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    // Pie Chart
+    const pieCtx = document.getElementById('pieChart').getContext('2d');
+    new Chart(pieCtx, {
+      type: 'pie',
+      data: {
+        labels: ['eBooks', 'Magazines', 'Courses', 'Podcasts'],
+        datasets: [{
+          label: 'Content Type',
+          data: [40, 30, 20, 10],
+          backgroundColor: ['#2ecc71', '#9b59b6', '#e67e22', '#e74c3c']
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+  </script>
+</body>
+</html>

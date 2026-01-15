@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fb;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container, .dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.payment-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.payment-options button {
+  background: #2980b9;
+  border-radius: 6px;
+}
+
+.back-home {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+#uploadMsg, #message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+}/* coach.css */
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7fb; margin: 0; padding: 0; color: #333; }
+
+.header { background-color: #1e293b; color: white; padding: 20px; text-align: center; font-size: 1.6rem; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+
+.dashboard { max-width: 1200px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); animation: fadeIn 0.8s ease-in-out; }
+
+.dashboard h2 { text-align: center; margin-bottom: 25px; color: #0f172a; }
+
+.card-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-around; }
+
+.card { background: #e2e8f0; border-radius: 10px; padding: 20px; flex: 1 1 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+
+.card:hover { transform: scale(1.03); }
+
+.card h3 { margin-top: 0; color: #1e293b; }
+
+.card p { color: #475569; }
+
+.upload-section { margin-top: 40px; padding: 20px; background: #f8fafc; border: 2px dashed #94a3b8; text-align: center; border-radius: 12px; }
+
+.upload-section input[type="file"] { margin: 10px 0; }
+
+.subscription-status { margin-top: 20px; text-align: center; font-size: 1rem; color: #0f766e; font-weight: 600; }
+
+.subscribe-button { background: #2563eb; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 10px; transition: background 0.3s; }
+
+.subscribe-button:hover { background: #1d4ed8; }
+
+svg { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }

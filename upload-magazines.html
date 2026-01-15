@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Magazine | The Magazine Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #f9b20f;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      background-color: #008060;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005b44;
+    }
+
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Magazine Africa</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="magazines.html">Magazines</a>
+    <a href="upload-magazine.html">Upload</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Upload Your Magazine</h2>
+  <form id="uploadForm">
+    <label for="title">Magazine Title:</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="">Select Category</option>
+      <option value="faith">Faith & Spirituality</option>
+      <option value="culture">African Culture</option>
+      <option value="mind">Mind & Psychology</option>
+      <option value="global">Global Africa</option>
+    </select>
+
+    <label for="description">Short Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="file">Upload PDF File:</label>
+    <input type="file" id="file" name="file" accept=".pdf" required />
+
+    <label for="cover">Upload Cover Image:</label>
+    <input type="file" id="cover" name="cover" accept="image/*" required />
+
+    <button type="submit">Submit for Review</button>
+  </form>
+  <p class="note">Once submitted, your magazine will be reviewed before publishing.</p>
+</div>
+
+<footer>
+  &copy; 2025 The Magazine Africa. All rights reserved.
+</footer>
+
+<script>
+  const form = document.getElementById('uploadForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert("Your magazine has been submitted for review. You'll be notified upon approval.");
+    form.reset(); // Simulate successful submission for now
+  });
+</script>
+
+</body>
+</html>

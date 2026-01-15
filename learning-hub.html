@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Hub - The Magazine Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <style>
+    :root {
+      --main-color: #4b0082;
+      --accent-color: #f39c12;
+      --light-bg: #f8f8f8;
+    }body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: #333;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--main-color), #2e0854);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero a {
+  padding: 12px 30px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  background-color: #e67e22;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  fill: var(--main-color);
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+.feature p {
+  font-size: 0.95rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta a {
+  background-color: var(--main-color);
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+  </style>
+</head><body>
+  <section class="hero">
+    <h1>Welcome to The Magazine Africa Learning Hub</h1>
+    <p>Explore curated digital content, courses, and mentorship designed to inspire, equip, and empower African creators, writers, and change-makers.</p>
+    <a href="learning.html">Explore Courses</a>
+  </section>  <section class="section">
+    <div class="features">
+      <div class="feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14.5v-5h2v5h-2zm0-7V7h2v2.5h-2z"/></svg>
+        <h3>Expert Courses</h3>
+        <p>Gain access to valuable knowledge from industry leaders and Christian mentors across Africa.</p>
+      </div><div class="feature">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12c0 4.41 2.86 8.18 6.84 9.5l.66-2.34C6.68 18.08 5 15.2 5 12c0-3.87 3.13-7 7-7s7 3.13 7 7c0 3.2-1.68 6.08-4.5 7.16l.66 2.34C19.14 20.18 22 16.41 22 12c0-5.51-4.49-10-10-10z"/></svg>
+    <h3>24/7 Mentorship</h3>
+    <p>Our faith-driven mentors are here to guide and walk with you throughout your creative and spiritual journey.</p>
+  </div>
+
+  <div class="feature">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-7.8 16.4L2 22l3.6-2.2A10 10 0 1012 2z"/></svg>
+    <h3>Vibrant Community</h3>
+    <p>Join a tribe of passionate creators, spiritual leaders, and storytellers changing Africa and the world.</p>
+  </div>
+</div>
+
+<div class="cta">
+  <p>Ready to dive deeper? Discover more courses and opportunities inside The Magazine Africa Learning Hub.</p>
+  <a href="learning.html">Start Learning Now</a>
+</div>
+
+  </section>
+</body></html>

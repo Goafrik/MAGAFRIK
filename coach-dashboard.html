@@ -1,0 +1,45 @@
+<!-- coach-dashboard.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coach Dashboard | The Magazine Africa</title>
+  <link rel="stylesheet" href="coach.css" />
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <h1>The Magazine Africa</h1>
+      <a href="index.html" class="home-link">Back to Homepage</a>
+    </nav>
+  </header>  <main class="dashboard-container">
+    <section class="welcome-box">
+      <h2>Welcome, Coach</h2>
+      <p>You are currently on a <strong>2-month free trial</strong>. Your next billing date is: <span id="nextBilling"></span></p>
+    </section><section class="upload-section">
+  <h3>Upload Your Coaching Materials</h3>
+  <form id="uploadForm">
+    <input type="text" placeholder="Title of your product" required />
+    <input type="file" accept=".pdf,.zip,.mp4,.mp3" required />
+    <textarea placeholder="Brief description" rows="4" required></textarea>
+    <button type="submit">Upload Now</button>
+  </form>
+</section>
+
+<section class="payment-methods">
+  <h3>Subscribe to Stay Active</h3>
+  <p>Monthly Fee: <strong>KES 2,000</strong></p>
+  <div class="payment-icons">
+    <!-- M-PESA -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24"><path fill="green" d="M12 2C6.48 2 2 6.48 2 12s4.48..."/></svg>
+    <!-- PayPal -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24"><path fill="#003087" d="M9 2h6.5a4.5 4.5 0 0 1 ..."/></svg>
+    <!-- Visa -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24"><path fill="#1A1F71" d="M2 3h20v18H2V3zm13.5 5.5..."/></svg>
+    <!-- MasterCard -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 24 24"><circle cx="8" cy="12" r="6" fill="#EB001B"/><circle cx="16" cy="12" r="6" fill="#F79E1B"/></svg>
+  </div>
+  <button class="subscribe-btn">Subscribe Now</button>
+</section>
+
+  </main>  <script src="coach.js"></script></body>
+</html>

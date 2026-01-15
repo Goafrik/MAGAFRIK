@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In - The Magazine Africa</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    .signin-container {
+      max-width: 450px;
+      margin: 80px auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .signin-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .signin-btn {
+      width: 100%;
+      padding: 0.9rem;
+      background: #009688;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .signin-btn:hover {
+      background: #00796b;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .google-btn {
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #333;
+    }
+
+    .google-btn:hover {
+      background: #f1f1f1;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .services {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .services a {
+      display: inline-block;
+      margin: 0.4rem;
+      padding: 0.6rem 1rem;
+      background: #f2f2f2;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #009688;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .services a:hover {
+      background: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signin-container">
+    <h2>Sign in to your account</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button class="signin-btn" type="submit">Sign In</button>
+
+      <div class="divider">or</div>
+
+      <button class="signin-btn google-btn" type="button">Continue with Google</button>
+
+      <div class="signup-link">
+        New to MagAfrica? <a href="signup.html">Sign up here</a>
+      </div>
+    </form>
+
+    <div class="services">
+      <p><strong>Explore Our Services:</strong></p>
+      <a href="marketplace.html">📚 Creator</a>
+      <a href="book.counselor.html">💬 Counselor</a>
+      <a href="book.coach.html">🎯 Coach</a>
+      <a href="community.html">🌍 Minister</a>
+      <a href="student.resources.html">📘 Student</a>
+      <a href="teacher.page.html">👨‍🏫 Teacher</a>
+    </div>
+  </div>
+
+</body>
+</html>

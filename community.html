@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community | The Magazine Africa</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .feature-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card h3 {
+      margin-top: 10px;
+      color: #2c3e50;
+    }
+    .feature-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .testimonials {
+      background-color: #eef2f5;
+      padding: 60px 20px;
+    }
+    .testimonial {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-left: 5px solid #2980b9;
+      max-width: 700px;
+      border-radius: 8px;
+    }
+    .cta {
+      background-color: #2c3e50;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .cta a {
+      background: #f39c12;
+      padding: 12px 25px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #e67e22;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to The Magazine Africa Community</h1>
+    <p>A vibrant space for African creators, mentors, writers, and counselors to connect and grow.</p>
+  </header>
+
+  <section>
+    <h2>Why Join Our Community?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🤝 Peer-to-Peer Support</h3>
+        <p>Connect with like-minded creators, writers, and counselors from across Africa.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎓 Learning Circles</h3>
+        <p>Join interactive coaching hubs and growth groups hosted weekly by experts.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📣 Voice Your Story</h3>
+        <p>Get featured on our blog or social media. Be the next inspiring voice of Africa.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💡 Monthly Live Sessions</h3>
+        <p>Attend webinars, Q&As, and mentorship spaces hosted by trusted community leaders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 style="text-align:center;">What Our Members Say</h2>
+    <div class="testimonial">
+      <p>“Since joining The Magazine Africa community, I’ve collaborated with amazing writers and launched my first eBook successfully.” – <strong>Sarah, Nairobi</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>“The peer support group kept me going through my hardest season. It's more than just a platform — it's a family.” – <strong>Joshua, Abuja</strong></p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Grow With Us?</h2>
+    <a href="signup.html">Join the Community Now</a>
+  </section>
+
+</body>
+</html>

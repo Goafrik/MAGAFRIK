@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magazines | The Magazine Africa</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      background: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta {
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta a {
+      background: #006400;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .magazine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .magazine-card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .magazine-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .magazine-card h3 {
+      margin-top: 0;
+    }
+
+    .magazine-card p {
+      color: #444;
+    }
+
+    .magazine-card a {
+      color: #006400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Magazine Africa</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="magazine.html" class="active">Magazines</a></li>
+      <li><a href="coaching.html">Coaching</a></li>
+      <li><a href="signin.html">Sign In</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Explore African & Christian Magazines</h2>
+  <p>Discover bold journals, wellness digests, devotionals, and cultural treasures written for the modern reader with eternal impact.</p>
+</section>
+
+<div class="cta">
+  <a href="upload-magazine.html">📤 Start Publishing Your Magazine</a>
+</div>
+
+<section class="magazine-grid">
+  <div class="magazine-card">
+    <h3>Faith & Fire Journal</h3>
+    <p>A monthly digest of testimonies, Christian lifestyle, and devotionals.</p>
+    <a href="#">Read More →</a>
+  </div>
+
+  <div class="magazine-card">
+    <h3>African Heritage</h3>
+    <p>Stories and visuals celebrating African roots, culture, and creative voices.</p>
+    <a href="#">Read More →</a>
+  </div>
+
+  <div class="magazine-card">
+    <h3>Mind Matters</h3>
+    <p>Faith-centered mental wellness topics from licensed African professionals.</p>
+    <a href="#">Read More →</a>
+  </div>
+
+  <div class="magazine-card">
+    <h3>Global Africa Report</h3>
+    <p>News and biblical worldview analysis from Africa to the world.</p>
+    <a href="#">Read More →</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 The Magazine Africa. All rights reserved.
+</footer>
+
+</body>
+</html>

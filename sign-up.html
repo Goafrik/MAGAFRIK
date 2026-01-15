@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | The Magazine Africa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="auth-container">
+    <div class="auth-box">
+      <h1>The Magazine Africa</h1>
+      <h2>Create your free account</h2>
+
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="password" placeholder="Password" required />
+
+        <label class="remember">
+          <input type="checkbox" />
+          Remember Me
+        </label>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="alt-options">
+        Already have an account? <a href="login.html">Sign In</a><br>
+        Forgot Password? <a href="#">Click here</a><br>
+        Didn't receive confirmation? <a href="#">Resend</a>
+      </p>
+
+      <div class="divider">OR</div>
+
+      <a href="#" class="google-btn">Continue with Google</a>
+
+      <p class="terms">
+        By signing up, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+  <!-- Services Overview -->
+  <section id="services" class="services-overview">
+    <h2>Explore What We Offer</h2>
+    <div class="services-buttons">
+      <a href="marketplace.html" class="service-link">🛒 Marketplace</a>
+      <a href="wellness.html" class="service-link">💖 Wellness & Coaching</a>
+      <a href="community.html" class="service-link">🌍 Community</a>
+      <a href="blog.html" class="service-link">📝 Blog</a>
+      <a href="forcreators.html" class="service-link">🎨 For Creators</a>
+    </div>
+  </section><!-- 🌍 Privacy Settings Popup for Sign-Up -->
+<div id="privacy-popup-signup" class="privacy-modal">
+  <div class="privacy-content">
+    <h3>Privacy Settings</h3>
+    <p>We use cookies to improve your experience. You can manage your preferences below.</p>
+
+    <div class="toggle-section">
+      <label><input type="checkbox" checked> Essential</label>
+      <label><input type="checkbox"> Marketing</label>
+      <label><input type="checkbox"> Functional</label>
+    </div>
+
+    <div class="button-row">
+      <button onclick="closePrivacySignup()">Accept All</button>
+      <button onclick="closePrivacySignup()">Deny</button>
+      <button onclick="closePrivacySignup()">Save Settings</button>
+    </div>
+
+    <small><a href="#">More Info</a> • Powered by TheMagAfrica</small>
+ </div>
+<script>
+  function closePrivacySignup() {
+    document.getElementById("privacy-popup-signup").style.display = "none";
+ }
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

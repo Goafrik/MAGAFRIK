@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #0f3c68, #1452a3);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.integration-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.benefits-box {
+  flex: 1;
+  min-width: 320px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.benefits-box:hover {
+  transform: translateY(-5px);
+}
+
+.benefits-box h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #0f3c68;
+}
+
+.benefits-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-box ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.benefits-box ul li i {
+  color: green;
+  margin-right: 10px;
+}
+
+.cta-box {
+  flex: 1;
+  min-width: 320px;
+  background: linear-gradient(to right, #0073ff, #0099cc);
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box h2 {
+  margin-bottom: 15px;
+}
+
+.cta-box p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.cta-box button {
+  background: #fff;
+  color: #0073ff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-box button:hover {
+  background: #eee;
+}
+
+.success-msg {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00cc66;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+footer {
+  margin-top: 50px;
+  background: #0f3c68;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .integration-container {
+    flex-direction: column;
+}
+}

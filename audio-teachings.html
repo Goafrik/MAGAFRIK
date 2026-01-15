@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio Teachings | The Magazine Africa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 28px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    .hero {
+      background: linear-gradient(to right, #f39c12, #d35400);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .audio-section {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .audio-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      position: relative;
+    }
+    .audio-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .audio-card h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+    .audio-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .actions button {
+      flex: 1;
+      padding: 10px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .upload-section {
+      margin: 60px 40px;
+      background: #ecf0f1;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .upload-section input[type="file"] {
+      padding: 10px;
+      margin-top: 15px;
+    }
+    .upload-section button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Magazine Africa</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="signin.html">Sign In</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Audio Teachings Marketplace</h2>
+  <p>Listen, Learn, and Grow — Explore Africa’s Voice Through Audio</p>
+</section>
+
+<section class="audio-section">
+  <div class="audio-card">
+    <img src="https://source.unsplash.com/featured/?african,speaker" alt="Audio Teaching"/>
+    <h3>Wisdom for the Soul</h3>
+    <p>By Apostle Nyauma. This powerful teaching dives into healing, cultural restoration, and spiritual direction.</p>
+    <audio controls style="width: 100%; margin-top: 10px;">
+      <source src="sample-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="actions">
+      <button onclick="alert('Downloading...')">⬇ Download</button>
+      <button onclick="alert('Buying...')">💳 Buy Now</button>
+    </div>
+  </div>
+
+  <div class="audio-card">
+    <img src="https://source.unsplash.com/featured/?african,books" alt="African Wisdom"/>
+    <h3>Culture & Identity</h3>
+    <p>Explore deep stories and audios from elders, thought leaders, and tribal historians in this powerful archive.</p>
+    <audio controls style="width: 100%; margin-top: 10px;">
+      <source src="culture-audio.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="actions">
+      <button>⬇ Download</button>
+      <button>💳 Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<section class="upload-section">
+  <h2>🎙 Upload Your Audio Teaching</h2>
+  <p>Are you a Coach, Pastor, or Counselor? Share your audio teachings with the world today.</p>
+  <input type="file" id="audioUpload" accept="audio/*" />
+  <button onclick="uploadAudio()">Upload Now</button>
+</section>
+
+<footer>
+  <p>🌍 Powered by The Magazine Africa | © 2025 All rights reserved</p>
+</footer>
+
+<script>
+  function uploadAudio() {
+    const input = document.getElementById('audioUpload');
+    if (input.files.length > 0) {
+      alert('Your audio "' + input.files[0].name + '" is ready for submission.');
+    } else {
+      alert('Please select an audio file to upload.');
+    }
+  }
+</script>
+
+</body>
+</html>

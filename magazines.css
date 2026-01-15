@@ -1,0 +1,107 @@
+/* magazines.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+.header {
+  background-color: #10182f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #facc15;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #fee2e2, #fefce8);
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-upload {
+  background-color: #9333ea;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-upload:hover {
+  background-color: #7e22ce;
+}
+
+.magazine-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.mag-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  width: 280px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.mag-card:hover {
+  transform: translateY(-8px);
+}
+
+.svg-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #10182f;
+ color: white;
+}

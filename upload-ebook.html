@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Your eBook | The Magazine Africa</title>
+  <link rel="stylesheet" href="upload-ebook.css" />
+</head>
+<body>
+  <section class="upload-section">
+    <div class="upload-box">
+      <div class="icon-upload">
+        <!-- SVG Icon for Upload -->
+        <svg width="50" height="50" fill="#0984e3" viewBox="0 0 24 24">
+          <path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/>
+        </svg>
+      </div>
+      <h1>Upload Your eBook</h1>
+      <p>Share your knowledge with the world. Upload your eBook and start selling or inspiring others on The Magazine Africa Marketplace.</p>
+
+      <form id="ebook-upload-form" class="upload-form">
+        <label for="title">📚 eBook Title</label>
+        <input type="text" id="title" placeholder="Enter eBook title" required>
+
+        <label for="author">✍ Author Name</label>
+        <input type="text" id="author" placeholder="Your name" required>
+
+        <label for="category">🏷 Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option>Faith</option>
+          <option>Culture</option>
+          <option>Psychology</option>
+          <option>Education</option>
+          <option>Memoirs</option>
+          <option>Business</option>
+        </select>
+
+        <label for="description">📝 Short Description</label>
+        <textarea id="description" rows="4" placeholder="What's your book about?" required></textarea>
+
+        <label for="ebookFile">📁 Upload File (PDF only)</label>
+        <input type="file" id="ebookFile" accept=".pdf" required>
+
+        <button type="submit" class="upload-btn">🚀 Upload eBook</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="upload-ebook.js"></script>
+</body>
+</html>

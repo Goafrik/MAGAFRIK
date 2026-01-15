@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fd;
+  color: #222;
+}
+
+header {
+  background: #1d2230;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.animated-title {
+  font-size: 2.5rem;
+  animation: pulse 2s infinite;
+}
+.subtitle, .founder-quote {
+  font-size: 1.1rem;
+}
+.founder-quote {
+  margin-top: 1rem;
+  font-style: italic;
+}
+@keyframes pulse {
+  0% { text-shadow: 0 0 5px #0ff; }
+  100% { text-shadow: 0 0 20px #0ff; }
+}
+.nav-links {
+  margin-top: 1rem;
+}
+.nav-links a {
+  color: #0ff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hub-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.hub-card {
+  background: white;
+  border-radius: 12px;
+  width: 280px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+.hub-card:hover {
+  transform: scale(1.05);
+}
+.hub-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.hub-card h3 {
+  color: #1d2230;
+  margin-bottom: 0.5rem;
+}
+
+.cartoon-section {
+  background: #eaf1ff;
+  padding: 2rem;
+  text-align: center;
+}
+.cartoon-section img {
+  width: 180px;
+  border-radius: 20px;
+}
+.caption {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.ai-assistant-section {
+  background: #f4f8fe;
+  padding: 2rem;
+  text-align: center;
+}
+.ai-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.ai-box input {
+  padding: 0.6rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+.ai-box button {
+  padding: 0.6rem 1.2rem;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ai-box button:hover {
+  background: #0055cc;
+}
+#aiResponse {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.footer-section {
+  background: #1d1f2b;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.footer-section .social-links img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+.footer-section .social-links img:hover {
+  transform: scale(1.2);
+}

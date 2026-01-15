@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Rise of African Wisdom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      margin: 0;
+      background: #f8f6f1;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .intro {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .intro p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img, .card svg {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card-body h3 {
+      margin: 0 0 0.5rem;
+    }
+    .card-body p {
+      font-size: 0.95rem;
+    }
+    .btn {
+      background-color: #e67e22;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background-color: #cf711f;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌍 The Rise of African Wisdom</h1>
+    <p>Celebrating African identity, culture, and the untold wisdom of the continent</p>
+  </header>
+
+  <section class="intro">
+    <p>
+      From the valleys of the Nile to the hills of the Rift, African wisdom has shaped civilization through storytelling, music, spirituality, and proverbs.
+      This page is your gateway to reconnecting with identity, sharing books, and learning from cultural giants.
+    </p>
+  </section>
+
+  <section class="section-grid">
+    <!-- Storytelling -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534183128195-c7b6a4c6b67d" alt="Storytelling">
+      <div class="card-body">
+        <h3>📖 Oral Storytelling</h3>
+        <p>Explore how African folktales passed wisdom across generations through griots, chants, and fireside tales.</p>
+        <a href="https://www.africa.upenn.edu/K-12/African_Myths.html" class="btn" target="_blank">Explore Stories</a>
+      </div>
+    </div>
+
+    <!-- Cultural Dance -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620912158801-5c11690e3d60" alt="Dance">
+      <div class="card-body">
+        <h3>💃🏿 Cultural Dances</h3>
+        <p>Dance is a vessel of African wisdom — spiritual, communal, and expressive. Watch and learn traditional dances across tribes.</p>
+        <a href="https://www.youtube.com/results?search_query=african+cultural+dances" class="btn" target="_blank">Watch Dances</a>
+      </div>
+    </div>
+
+    <!-- African Books -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" alt="African Books">
+      <div class="card-body">
+        <h3>📚 African Books</h3>
+        <p>Buy or upload books about culture, wisdom, and heritage. Sell your digital eBooks directly from Magazine Africa.</p>
+        <a href="https://www.bookshop.org/lists/books-by-african-authors" class="btn" target="_blank">Browse Books</a>
+      </div>
+    </div>
+
+    <!-- Upload eBooks -->
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#2c3e50" height="200" viewBox="0 0 24 24">
+        <path d="M12 16l-6-6h12z"/>
+      </svg>
+      <div class="card-body">
+        <h3>🚀 Upload Your eBook</h3>
+        <p>Are you a storyteller or creator? Upload your eBook on African wisdom and let the world hear your voice.</p>
+        <a href="upload.html" class="btn">Upload Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 The Magazine Africa. Rooted in identity. Rising in truth.
+  </footer>
+
+  <script>
+    // Example animation or interaction JS
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('mouseover', () => {
+        btn.style.transform = 'scale(1.05)';
+      });
+      btn.addEventListener('mouseout', () => {
+        btn.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+
+</body>
+</html>

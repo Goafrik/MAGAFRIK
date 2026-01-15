@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><nav style="margin-top: 10px;">
+  <a href="index.html" style="color: #00b894; text-decoration: none; margin-right: 15px; font-weight: bold;">🏠 Home</a>
+</nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eBooks - The Magazine Africa</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2d3436;
+    }
+
+    .ebooks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .ebook-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .ebook-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .ebook-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .ebook-meta {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .ebook-btn {
+      background: #00b894;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .ebook-btn:hover {
+      background: #0984e3;
+    }
+
+    .upload-reminder {
+      background: #dff9fb;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 40px;
+      border: 2px dashed #00b894;
+    }
+
+    .svg-upload-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #00cec9;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      gap: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .svg-upload-btn:hover {
+      background: #0984e3;
+    }
+
+    .platform-import {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .platform-import button {
+      background: #6c5ce7;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .platform-import button:hover {
+      background: #4834d4;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Magazine Africa - eBooks Hub</h1>
+</header>
+
+<div class="container">
+
+  <h2 class="section-title">Featured eBooks</h2>
+  <div class="ebooks-grid">
+    <div class="ebook-card">
+      <div class="ebook-title">The Rise of African Wisdom</div>
+      <div class="ebook-meta">By Chris Afwande · Culture & Identity</div>
+      <a href="#" class="ebook-btn">Read More</a>
+    </div>
+
+    <div class="ebook-card">
+      <div class="ebook-title">Healing the Broken Spirit</div>
+      <div class="ebook-meta">By Grace Otieno · Mental Health & Faith</div>
+      <a href="#" class="ebook-btn">Buy Now</a>
+    </div>
+
+    <div class="ebook-card">
+      <div class="ebook-title">The Digital Creator's Manual</div>
+      <div class="ebook-meta">By Joel Adeyemi · Creator Economy</div>
+      <a href="#" class="ebook-btn">Download Free</a>
+    </div>
+  </div>
+
+  <!-- Upload Option if Logged In -->
+  <div id="uploadSection" class="upload-reminder" style="display: none;">
+    <p>📤 Already have an eBook? Share it with Africa and the world.</p>
+    <a href="upload-ebook.html" class="svg-upload-btn">
+      <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.67v4h6V9h3.67L12 2z"/></svg>
+      Upload Your eBook
+    </a>
+  </div>
+
+  <!-- Integration with other platforms -->
+  <div class="platform-import">
+    <p><strong>Already published on Gumroad, Amazon KDP, or Payhip?</strong></p>
+    <button onclick="alert('Feature coming soon. Connect your external accounts!')">
+      Transfer Your eBook from Another Platform
+    </button>
+  </div>
+
+</div>
+
+<script>
+  // Simulate login check (replace this with real backend auth later)
+  const isUserLoggedIn = true; // Change to false to simulate logged-out user
+  const uploadSection = document.getElementById('uploadSection');
+
+  if (isUserLoggedIn && uploadSection) {
+    uploadSection.style.display = "block";
+  }
+</script>
+
+</body>
+</html>
